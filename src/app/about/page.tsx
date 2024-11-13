@@ -85,7 +85,7 @@ export default function About() {
 
         {/* Call to Action Button */}
         <button className="mt-8 bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded  transform transition-transform duration-300 hover:scale-105 ">
-          Let's Talk
+        Let&apos;s Talk
         </button>
       </section>
     </div>
