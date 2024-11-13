@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav className="flex justify-around items-center h-[80px] bg-[#1E1E6D]">
-      <div className="text-xl font-bold text-white">Faria's Portfolio</div>
+      <div className="text-xl font-bold text-white">Faria&apos;s Portfolio</div>
       <ul className="flex justify-center space-x-6">
         <li id="hover-home">
           <Link href="/home" className="text-white hover:text-[#9e9ee9] ">

@@ -13,20 +13,21 @@ export default function About() {
         strings: [
           'Web Developer and Tech enthusiast from Karachi, Pakistan',
           'My journey in web development began with a deep love',
-          'for writing clean & maintainable code',
+          'for writing clean &amp; maintainable code',
           'I am always eager to learn new features',
-          '& stay updated with the latest technologies.',
+          '&amp; stay updated with the latest technologies.',
         ],
         typeSpeed: 70,
         backSpeed: 50,
         loop: true,
       });
-
+  
       return () => {
         typed.destroy();
       };
     }
   }, []);
+  
 
 
   return (

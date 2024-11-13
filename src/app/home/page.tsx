@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* Hello World Section */}
       <div className="mb-8">
-        <p className=" text-white text-2xl mb-4">The first steps are filled with discovery and small triumphs. You write your first lines of code, and the screen echoes back 🎗"Hello, World!"🎗</p>
+        <p className=" text-white text-2xl mb-4">The first steps are filled with discovery and small triumphs. You write your first lines of code, and the screen echoes back 🎗&quot;Hello, World!&quot;🎗</p>
         <div className="flex justify-center">
          <Image
  src="/OIP.jpeg" 

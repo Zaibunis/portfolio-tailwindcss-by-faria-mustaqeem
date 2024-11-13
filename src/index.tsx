@@ -1,5 +1,5 @@
 "use client";
-import Navbar from './navbar';
+
 import Typed from 'typed.js';
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -7,22 +7,34 @@ import Image from 'next/image';
 export default function Home() {
   const typedElement = useRef(null);
 
+  
   useEffect(() => {
-    const typed = new Typed(typedElement.current, {
-      strings: [
-        'And I am a passionate',
-        'Web Developer with a solid foundation in HTML & CSS',
-        'a strong grasp of TypeScript',
-        'and basics of Next.js',
-      ],
-      typeSpeed: 50,
-      loop: true,
-    });
+    // Ensure the reference is set
+    if (typedElement.current) {
+      const typed = new Typed(typedElement.current, {
+        strings: [
+          'And I am a passionate',
+          'Web Developer with a solid foundation in HTML &amp; CSS',
+          'a strong grasp of TypeScript',
+          'and basics of Next.js',
+        ],
+        typeSpeed: 50,      // Speed of typing
+        backSpeed: 30,      // Speed of backspacing
+        backDelay: 1000,    // Delay before typing back
+        loop: true,         // Infinite loop
+      });
 
-    return () => {
-      typed.destroy();
-    };
+      // Cleanup function to destroy the Typed instance on component unmount
+      return () => {
+        typed.destroy();
+      };
+    }
   }, []);
+
+  
+
+
+
 
   return (
     <div>

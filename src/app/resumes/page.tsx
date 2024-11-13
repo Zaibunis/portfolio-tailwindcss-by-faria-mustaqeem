@@ -19,7 +19,7 @@ export default function Resume() {
       <div className="flex justify-center gap-8 flex-wrap">
         {/* Static Resume Builder Card */}
         <div className="bg-white text-black rounded-lg shadow-lg w-72 p-4 transform transition-transform duration-300 hover:scale-105">
-        import Image from 'next/image';
+       
 
 <Image
   src="/mile 1.PNG"
